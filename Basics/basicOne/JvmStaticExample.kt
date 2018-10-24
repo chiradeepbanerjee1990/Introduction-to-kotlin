@@ -4,6 +4,11 @@ package Basics.basicOne
  * Created by Chiradeep Banerjee
  * Email : chiradeep.banerjee72@gmail.com.
  */
+
+
+/**
+ * Names of classes and objects start with an upper case letter and use camel humps
+ */
 class JvmStaticExample {
 
     /**
@@ -23,8 +28,8 @@ class JvmStaticExample {
     companion object {
         @JvmStatic fun main(args: Array<String>) {
             print("From static method\n")
-            val obj:JvmStaticExample = JvmStaticExample()
-            obj.secondFunction()
+            val objectJvmStatic = JvmStaticExample()
+            objectJvmStatic.secondFunction()
         }
 
         @JvmStatic fun myStaticFun() = print("Successfully called")
@@ -39,5 +44,12 @@ class JvmStaticExample {
         JvmStaticExample.myStaticFun()
     }
 
+    /**
+     * Names of functions, properties and local variables start with a
+     * lower case letter and use camel humps and no underscores
+     */
+    fun functionNameIllustration(){
+        var myVariable : Int = 5
+    }
 
 }
