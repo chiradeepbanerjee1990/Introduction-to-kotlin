@@ -17,9 +17,17 @@ package Basics.basicThree
      * foo(2,"John") // Bad way
      */
 
-    val list: List<Int> = listOf(1,2,3,4,5)
+    val list: List<Int> = listOf(1,2,3,4,5) //This is only read only list
+    val mutList:MutableList<Int> = mutableListOf(1,2,4,5,7,8)
     val highest = list.filter { x -> x > 4 } //filter is just an example over here which is taking lambda fun and will return 5 here.
 
+
+
     fun main(args: Array<String>){
-        print("The filtered number = $highest")
+        print("The filtered number = $highest\n")
+
+        /**
+         * add or remove option for list is only available for mutableList
+         */
+        mutList.add(9)
     }
