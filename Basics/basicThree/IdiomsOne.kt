@@ -4,8 +4,12 @@ package Basics.basicThree
  * Created by Chiradeep Banerjee
  * Email : chiradeep.banerjee72@gmail.com.
  */
+/**
+ * A collection of random and frequently used idioms in Kotlin.
+ */
 
 /**
+ * IDIOM - 1
  * Creating a POJO class is easy and by default provides frequently used methods
  */
 

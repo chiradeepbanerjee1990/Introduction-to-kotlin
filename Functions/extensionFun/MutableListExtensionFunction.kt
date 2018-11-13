@@ -5,6 +5,10 @@ package Functions.extensionFun
  * Email : chiradeep.banerjee72@gmail.com.
  */
 
+/**
+ * The below example shows the default extension functions provided by kotlin
+ */
+
  var myList:MutableList<Int> = mutableListOf(1,2,3,4,5,6,7)
  val reverseList:List<Int> = myList.asReversed() //returns a read only reverse list. Kotlin extension func
 
@@ -15,6 +19,12 @@ fun main(args:Array<String>) {
      * To iterate through arr we can use foreach -> lambda
      */
     reverseList.forEachIndexed { index, elem -> print("$index and value ${reverseList.get(index)}\n") }
+
+    /**
+     * Below we will show few extension function used in mutableList by default. Default extension functions
+     * are inherited from MutableCollection.kt class
+     */
+
     /**
      * Returns the last element.
      * @throws [NoSuchElementException] if the list is empty.
